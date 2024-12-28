@@ -1,4 +1,4 @@
-# 請說明下面兩種判斷式寫法執行步驟為如何？ 並說明兩種寫法差異？ 請舉例說明
+## 請說明下面兩種判斷式寫法執行步驟為如何？ 並說明兩種寫法差異？ 請舉例說明
 
 ### Case 1
 
@@ -29,10 +29,9 @@ else:
 # 只要一個條件為 True 就不會執行後續條件
 # 如果全部條件都為 False 就會執行 else
 # 適用多個條件互斥的情況
-
 ```
 
-# 請說明 \*args 與 \*\*kwargs 代表什麼意思？
+## 請說明 \*args 與 \*\*kwargs 代表什麼意思？
 
 ```py
 def normal_func(arg1, arg2, *args, **kwargs):
@@ -43,10 +42,9 @@ def normal_func(arg1, arg2, *args, **kwargs):
 
 # kwargs 用於接收可變數量的關鍵字引數
 # 在函數內會被封裝成 Dict
-
 ```
 
-# 請說明以下例子分別會輸出什麼？
+## 請說明以下例子分別會輸出什麼？
 
 ### Case 1
 
@@ -68,7 +66,6 @@ normal_func(1, 2, *[3, 4, 5])
 # *args = (*[3, 4, 5]) 將 list 拆成單個值
 # kwargs = {}
 # 輸出 1 2 (3, 4, 5) {}
-
 ```
 
 ### Case 3
@@ -104,7 +101,7 @@ normal_func(**{"arg1": 1, "arg2": 2, "args3": 3})
 # 1 2 () {'args3': 3}
 ```
 
-# 如何讓物件可迭代？
+## 如何讓物件可迭代？
 
 ```py
 class A:
@@ -114,7 +111,7 @@ class A:
 instance = A()
 ```
 
-# 如何讓 `instance` 這個物件能夠被迭代(最簡單的方式)？ 或是能夠使用 list(instance)?
+## 如何讓 `instance` 這個物件能夠被迭代(最簡單的方式)？ 或是能夠使用 list(instance)?
 
 ```py
 for i in instance:
@@ -134,7 +131,7 @@ for i in instance:
     print(i)
 ```
 
-# OOP basic
+## OOP basic (物件導向基礎)
 
 ```py
 class A:
@@ -160,7 +157,7 @@ a1 = A()
 a2 = A()
 ```
 
-# 請回答下列問題
+## 請回答下列問題
 
 ```py
 a1.normal_method == a2.normal_method
@@ -205,7 +202,7 @@ a1.c == a2.c
 # 因為 a1.c 為 100，a2.c 仍然為 3
 ```
 
-# multi inheritance (多繼承)
+## multi inheritance (多繼承)
 
 ```py
 class A:
