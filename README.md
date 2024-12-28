@@ -113,9 +113,7 @@ class A:
 instance = A()
 ```
 
-## 如何讓 `instance` 這個物件能夠被迭代(最簡單的方式)？
-
-### 或是能夠使用 list(instance)?
+## 如何讓 `instance` 這個物件能夠被迭代(最簡單的方式)？或是能夠使用 list(instance)?
 
 ```py
 for i in instance:
@@ -161,7 +159,7 @@ a1 = A()
 a2 = A()
 ```
 
-## 請回答下列問題
+### 請回答下列問題
 
 ```py
 a1.normal_method == a2.normal_method
