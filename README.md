@@ -233,4 +233,3 @@ instance.func2()
 # 因為 Python 使用了方法解析順序(MRO)，所以會優先執行 A.func2()
 # 對於 C，MRO 是 [C, A, B, object]，因此先從 A 查找 func2()
 ```
-# Python-Question
