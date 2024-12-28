@@ -103,7 +103,7 @@ normal_func(**{"arg1": 1, "arg2": 2, "args3": 3})
 # 1 2 () {'args3': 3}
 ```
 
-## 如何讓物件可迭代？
+## 如何讓 `instance` 這個物件能夠被迭代(最簡單的方式)？或是能夠使用 list(instance)?
 
 ```py
 class A:
@@ -111,15 +111,12 @@ class A:
 
 
 instance = A()
-```
 
-## 如何讓 `instance` 這個物件能夠被迭代(最簡單的方式)？或是能夠使用 list(instance)?
-
-```py
 for i in instance:
     print(i)
+```
 
-
+```py
 class A:
     def __init__(self):
         self.data = [1, 2, 3]
