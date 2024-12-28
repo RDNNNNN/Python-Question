@@ -105,7 +105,7 @@ normal_func(**{"arg1": 1, "arg2": 2, "args3": 3})
 # *args = ()
 # kwargs = {"args3": 3}
 
-# 輸出1 2 () {'args3': 3}
+# 輸出 1 2 () {'args3': 3}
 ```
 
 ## 如何讓 `instance` 這個物件能夠被迭代(最簡單的方式)？或是能夠使用 list(instance)?
@@ -167,7 +167,7 @@ a2 = A()
 a1.normal_method == a2.normal_method
 
 # False
-# 雖然是綁定同個方法，但是是綁定不同的物件
+# 雖然是綁定同個方法，但是綁定不同的物件
 # a1 和 a2 的記憶體會位置會不同
 ```
 
