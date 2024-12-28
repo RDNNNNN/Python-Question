@@ -1,6 +1,6 @@
 ## 請說明下面兩種判斷式寫法執行步驟為如何？ 並說明兩種寫法差異？
 
-## 請舉例說明
+### 請舉例說明
 
 ### Case 1
 
@@ -115,7 +115,7 @@ instance = A()
 
 ## 如何讓 `instance` 這個物件能夠被迭代(最簡單的方式)？
 
-## 或是能夠使用 list(instance)?
+### 或是能夠使用 list(instance)?
 
 ```py
 for i in instance:
@@ -135,7 +135,7 @@ for i in instance:
     print(i)
 ```
 
-## OOP basic (物件導向基礎)
+## OOP basic (Object Oriented Programming - 物件導向基礎)
 
 ```py
 class A:
