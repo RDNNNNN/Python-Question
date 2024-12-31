@@ -186,3 +186,33 @@ instance.func2()
 # instance.func2() 執行了 C.func2()
 # 因為 Python 使用了方法解析順序(MRO)，所以會優先執行 A.func2()
 # 對於 C，MRO 是 [C, A, B, object]，因此先從 A 查找 func2()。
+
+
+# 實現簡單的物件導向
+class Shape:
+    def get_area(self):
+        raise NotImplementedError("子類別必須使用 get_area 方法")
+
+
+class Square(Shape):
+    def __init__(self, side):
+        self.side = side
+
+    def get_area(self):
+        return self.side * self.side
+
+
+class Triangle(Shape):
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+
+    def get_area(self):
+        return (self.base * self.height) / 2
+
+
+square = Square(side=2)
+triangle = Triangle(base=2, height=4)
+
+print(f"Square 的面積: {square.get_area()}")
+print(f"Triangle 的面積: {triangle.get_area()}")
